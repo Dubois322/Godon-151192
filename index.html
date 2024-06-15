@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ ">
+  <link rel="stylesheet" type="text/css" href="m.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--Favicon-->
+  <link href="data: image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREREREQAAAAAAAAARAAAAAAAAABEAAAAAAAAAEQAAAAAAAAARAAAAAAAAABEAAAAAAAAAEQAAAAAAAAARAAAAAAAAABERERERERERERAAAAAAAAEQEQAAAAAAEQABEQAAABEQAAABEQAREAAAAAABERAAAAAAAAARAAAAAAAAAAf/4AAH++AAB8PgAAez4AAHo+AAB7/gAAfD4AAH/+AAAAAAAAP/wAAJ/5AADH4wAA8Y8AAPw/AAD+fwAA" rel="icon" type="image/x-icon">
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Godon</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li> 
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">View Warehouses <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="whouses.php">Warehouses</a></li>
+            <li><a href="viewrating.php">Rating</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <section class="section-meals" id="grid-photos">
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo" id="meals-1">
+                            <div class="slide-uploader" id="uploader-1">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-1" hidden="hidden" onchange="open_File(this)"/>
+                                    </div>
+                        <img src="img/w1.jpg" class="img img_hover" id="img-1">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-2">
+                            <div class="slide-uploader" id="uploader-2">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-2" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/w2.jpg" class="img img_hover" id="img-2">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-3">
+                            <div class="slide-uploader" id="uploader-3">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-3" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/w3.jpg" class="img img_hover" id="img-3">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-4">
+                            <div class="slide-uploader" id="uploader-4">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-4" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/w4.jpg" class="img img_hover" id="img-4">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-5">
+                            <div class="slide-uploader" id="uploader-5">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-5" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/w5.jpg" class="img img_hover" id="img-5">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-6">
+                            <div class="slide-uploader" id="uploader-6">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-6" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/w6.jpg" class="img img_hover" id="img-6">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-7">
+                            <div class="slide-uploader" id="uploader-7">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-7" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/w7.jpeg" class="img img_hover" id="img-7">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo" id="meals-8">
+                            <div class="slide-uploader" id="uploader-8">
+                                    <i class="fas fa-upload center"></i><br>
+                                    <input type="file" id="real-file-slide-8" hidden="hidden" onchange="open_File(this)"/>
+                                    
+                            </div>
+                        <img src="img/w8.jpg" class="img img_hover" id="img-8">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+</div>
+<!--Section:About Us-->
+<center>
+  <a name="#aboutus">
+    <h1 style="text-align:center; color:rgb(116, 48, 15)">About Us</h1>
+  <p style="text-align: justify; color:black">
+Welcome to Godon, where innovation meets efficiency in the realm of Warehouse Rental Management.
+As a leading provider of cutting-edge software solutions, we empower Warehouse Owners and Business Owners to streamline their operations and elevate the rental experience.
+  </p>
+  <h3 style="text-align: center; color:rgb(116, 48, 15)" >Join Us in Shaping the Future</h3>
+  <p style="text-align: justify; color:black">
+Whether you're a Warehouse Owner or Business Owner,Godon invites you to join us in shaping the future of warehouse rental management. Explore our software solutions and experience the difference that innovation and efficiency can make in your business.
+
+Thank you for considering Godon as your partner in warehouse rental management excellence.
+  </p>
+  </a>
+</center>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-footer">
+<!--Section: footer-->
+      <center>
+      <div class="container-fluid footer-basic">
+        <footer style="color:white">
+          <h5 style="text-align:center">Godon.</h5>
+         <p class="copyright">Godon© 2024 </p>
+        </footer>
+      </div>
+      </center>
+</div>
+</div>
+</nav>
+</body>
+</html>
